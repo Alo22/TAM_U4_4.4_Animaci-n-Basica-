@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/tigree"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/tigre"
+        android:tint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/ima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/animacion"
+            android:background="#FFC107"
+            android:text="Animaciòn 1"
+            android:onClick="onButtonClick"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/rota"
+            android:layout_width="150dp"
+            android:background="#FFEB3B"
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="Animaciòn 2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/rotaa"
+        android:background="#FF9800"
+        android:layout_width="150dp"
+        android:onClick="onButtonClick"
+        android:layout_height="100dp"
+        android:text="Animaciòn 3"/>
+    <Button
+        android:id="@+id/rotaaa"
+        android:background="#FF5722"
+        android:onClick="onButtonClick"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Animaciòn 4"/>
+    </LinearLayout>
+</LinearLayout>
